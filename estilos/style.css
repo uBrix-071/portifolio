@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/*Cores base*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-base: #202031;
+    --cor-contraste-suave: #2D2D44;
+    --cor-clara: #55B475;
+    --cor-destaque: #8798E5;
+    --cor-textos: #F1F1F1;
+    --fonte-titulos: "Montserrat", sans-serif;
+    --fonte-texto: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, #202031, #2D2D44);
+}
+
+
+header {
+    height: 200px;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-destaque);
+}
+
+header h1 {
+    padding-top: 50px;
+    font-size: 3em;
+    font-weight: 500;
+    text-shadow: 0px 0px 7px #55b47541 ;
+}
+
+header p {
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 7px #55b47541 ;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+nav a {
+    color: var(--cor-textos);
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: var(--fonte-texto);
+    border-radius: 10px;
+    text-shadow: 0px 0px 7px #55b47541 ;
+}
+
+nav a:hover {
+    background-color: var(--cor-destaque);
+    transition: 0.5s;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 360px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+section {
+    padding: 20px;
+}
+
+#sobre-mim img {
+    width: 300px;
+    border-radius: 50%;
+    border: 5px var(--cor-destaque) solid;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    text-shadow: 0px 0px 7px #55b47541 ;
+    box-shadow: 0px 0px 20px 4px #55b47541;
+}
+
+#sobre-mim {
+    color: var(--cor-textos);
+    border-top: 3px var(--cor-destaque) solid;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#sobre-mim h2 {
+    font-family: var(--fonte-titulos);
+    font-weight: 500;
+    font-size: 2.5em;
+    margin: 20px 0px;
+    text-shadow: 0px 0px 7px #55b47541 ;
+}
+
+#sobre-mim p {
+    text-indent: 30px;
+    font-family: var(--fonte-texto);
+    font-size: 1.1em;
+    line-height: 1.8;
+    font-weight: 200;
+    text-align: justify;
+}
+
+#projetos {
+    color: var(--cor-textos);
+    border-top: 3px var(--cor-destaque) solid;
+    text-align: center;
+}
+
+#projetos p {
+    color: var(--cor-textos);
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+#projetos h2 {
+    font-family: var(--fonte-titulos);
+    font-weight: 500;
+    font-size: 2.5em;
+    margin: 20px 0px;
+    text-shadow: 0px 0px 7px #55b47541 ;
+}
+
+#projetos h3 {
+    font-family: var(--fonte-titulos);
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 20px 0px;
+    text-shadow: 0px 0px 7px #55b47541 ;
+}
+
+#projetos img {
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    max-width: 550px;
+    width: 100%;
+    box-shadow: 0px 0px 20px 4px #55b47541;
+}
+
+#projetos p {
+    text-indent: 30px;
+    font-family: var(--fonte-texto);
+    font-size: 1.1em;
+    line-height: 1.8;
+    font-weight: 200;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+button {
+    background-color: var(--cor-destaque);
+    margin: 50px;
+    padding: 10px 30px;
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    color: var(--cor-textos);
+    border-radius: 20px;
+    border: 2px #8798E5 solid;
+    box-shadow: 0px 0px 7px 1px #55b47541;
+}
+
+button:hover {
+    box-shadow: 0px 0px 20px 4px #55b47541;
+    transition: 0.5s;
+}
+
+#contato img {
+    width: 100%;
+    max-width: 45px;
+    padding: 50px;
+    width: fit-content;
+}
+
+#contato {
+    color: var(--cor-textos);
+    border-top: 3px var(--cor-destaque) solid;
+    text-align: center;
+}
+
+#contato h2 {
+    font-family: var(--fonte-titulos);
+    font-weight: 500;
+    font-size: 2.5em;
+    margin: 20px 0px;
+    text-shadow: 0px 0px 7px #55b47541 ;
+}
+
+footer {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    color: var(--cor-textos);
+    font-weight: 600;
+}
