@@ -5,7 +5,7 @@
 :root {
     --cor-de-fundo1: #F5E48E;
     --cor-de-fundo2: #E2AA50;
-    --cor-de-contraste: #9EB960;
+    --cor-de-contraste: #CFF27D;
     --cor-de-textos: #B98150;
     --cor-escura: #644740;
     --cor-paragrafos: #424242;
@@ -219,7 +219,7 @@ tr:nth-child(even) {
 }
 
 .curiosidade {
-    background-color: var(--cor-de-contraste);
+    background-color: var(--cor-de-fundo1);
     padding: 20px;
     border-bottom: #4e3732 5px solid;;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.219);
