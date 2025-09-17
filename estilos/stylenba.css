@@ -64,10 +64,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--destaques);
-    color: var(--fundos);
-    box-shadow: 0px 0px 10px #f8d5257f;
-    transition: 0.3s;
+    text-decoration: underline var(--destaques);
+    transition: 1s  ease-in-out;
+    color: var(--destaques);
 }
 
 main {
@@ -84,8 +83,9 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center left;
-    width: 100vw;
-    box-shadow: inset 0px 0px 200px #aa7bc36a;
+    width: 100%;
+    box-shadow: inset 0px 0px 100px #aa7bc36a;
+    padding: 20px 0px;
 }
 
 .destaque h2 {
@@ -107,18 +107,107 @@ main {
 }
 
 img {
-    max-width: 400px;
+    max-width: 250px;
     width: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #aa7bc36a;
+    border: 2px solid var(--contraste);
 }
 
-#jogadores {
-    margin: 0px 20px;
-}
-
-/*
 #jogadores {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
-}*/
+    border-bottom: 1px solid var(--contraste);
+}
+
+.fundo {
+    background-color: var(--fundos);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #70b5ff50;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+.jogador {
+    text-align: center;
+}
+
+.jogador h3 {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 2em;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px #70b5ff50;
+    margin-bottom: 10px;
+}
+
+.jogador p {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 1em;
+    text-shadow: 1px 1px 2px #70b5ff50;
+    margin-top: 10px;
+}
+
+#estilo {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#estilo div {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#estilo h2 {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 2.5em;
+    text-decoration: underline 2px;
+    text-shadow: 2px 2px 4px #70b5ff50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#estilo h3 {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 2em;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px #70b5ff50;
+    margin-bottom: 10px;
+}
+
+#estilo p {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px #70b5ff50;
+    margin-bottom: 10px;
+}
+
+#estilo img {
+    max-width: 600px;
+    width: 100%;
+}
+
+footer {
+    padding: 30px;
+    color: var(--textos);
+    font-family: var(--font_textos);
+    text-align: center;
+}
+
+footer a {
+    color: var(--destaques);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--contraste);
+    text-decoration: underline;
+    transition: 0.5s;
+}
