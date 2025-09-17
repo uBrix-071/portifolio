@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --textos:#F3EFF5;
+    --fundos:#003F87;
+    --sombras:#70B5FF;
+    --destaques:#F8D525;
+    --contraste:#AA7BC3;
+    --font_titulos: "Anton", sans-serif;
+    --font_textos: "Anek Telugu", sans-serif;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundos);
+}
+
+header {
+    background-color: #003f8768;
+    height: 20vh;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    border-radius: 0px 0px 15px 15px;
+}
+
+header h1 {
+    color: var(--textos);
+    font-family: var(--font_titulos);
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #70b5ff50;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px #70b5ff50;
+}
+
+nav {
+    background-color: transparent;
+    text-align: center;
+    padding-top: 10px;
+}
+
+nav a {
+    color: var(--textos);
+    text-decoration: none;
+    font-family: var(--font_textos);
+    font-size: 1.1em;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: var(--destaques);
+    color: var(--fundos);
+    box-shadow: 0px 0px 10px #f8d5257f;
+    transition: 0.3s;
+}
+
+main {
+    max-width: 1100px;
+    min-width: 360px;
+    width: 100%;
+    margin: auto;
+}
+
+.destaque {
+    height: 50vh;
+    background-image: url(../imagens_nba/adam-bouse-m5nbZDHr8jM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center left;
+    width: 100vw;
+    box-shadow: inset 0px 0px 200px #aa7bc36a;
+}
+
+.destaque h2 {
+    color: var(--textos);
+    font-family: var(--font_titulos);
+    font-size: 3em;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 3px;
+    padding-top: 15vh;
+    text-align: center;
+}
+
+.destaque p {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+img {
+    max-width: 400px;
+    width: 100%;
+}
+
+#jogadores {
+    margin: 0px 20px;
+}
+
+/*
+#jogadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}*/
