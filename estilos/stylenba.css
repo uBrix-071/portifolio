@@ -21,15 +21,13 @@
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--fundos);
+    background-color: #001A37;
 }
 
 header {
     background-color: #003f8768;
     height: 20vh;
     padding: 0px 20px;
-    position: sticky;
-    top: 0;
     border-radius: 0px 0px 15px 15px;
 }
 
@@ -64,9 +62,10 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline var(--destaques);
-    transition: 1s  ease-in-out;
-    color: var(--destaques);
+    background-color: var(--destaques);
+    color: var(--fundos);
+    box-shadow: 0px 0px 10px #f8d5255d;
+    transition: 0.8s;
 }
 
 main {
@@ -110,8 +109,8 @@ img {
     max-width: 250px;
     width: 100%;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px #aa7bc36a;
-    border: 2px solid var(--contraste);
+    box-shadow: 0px 0px 10px #70b5ff50;
+    border: 2px solid white;
 }
 
 #jogadores {
@@ -123,7 +122,7 @@ img {
 }
 
 .fundo {
-    background-color: var(--fundos);
+    background-color: #003f8768;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #70b5ff50;
     margin: 20px 0px;
@@ -131,9 +130,12 @@ img {
 }
 
 .fundo:hover {
-    box-shadow: 0px 0px 20px #70b5ff;
+    box-shadow: 0px 0px 50px red;
     transition: 0.5s;
     transform: scale(1.05);
+    img {
+        border: 2px solid red;
+    }
 }
 
 .jogador {
@@ -197,6 +199,7 @@ img {
 #estilo img {
     max-width: 600px;
     width: 100%;
+    border: 2px solid var(--destaques);
 }
 
 footer {
@@ -217,7 +220,7 @@ footer a:hover {
     text-decoration: underline;
     transition: 0.5s;
 }
-/*
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -228,7 +231,7 @@ footer a:hover {
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; proporção 16:9 
+  padding-top: 56.25%;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
