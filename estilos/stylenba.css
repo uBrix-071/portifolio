@@ -25,7 +25,7 @@ html, body {
 }
 
 header {
-    background-color: #003f8768;
+    background-color: transparent;
     height: 20vh;
     padding: 0px 20px;
 }
@@ -65,6 +65,7 @@ nav a:hover {
     color: var(--fundos);
     box-shadow: 0px 0px 10px #f8d5255d;
     transition: 0.8s;
+    transform: scale(1.1);
 }
 
 main {
@@ -109,7 +110,7 @@ img {
     width: 100%;
     border-radius: 30px;
     box-shadow: 0px 0px 10px #70b5ff50;
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 #jogadores {
@@ -117,23 +118,68 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     padding: 20px;
-    border-bottom: 1px solid var(--contraste);
+    border-bottom: 1.5px solid var(--contraste);
 }
 
 .fundo {
     background-color: #003f8768;
-    border-radius: 15px;
     box-shadow: 0px 0px 10px #70b5ff50;
+    border-radius: 15px;
     margin: 20px 0px;
     padding: 20px;
 }
 
-.fundo:hover {
+#jordan:hover {
     box-shadow: 0px 0px 50px red;
     transition: 0.5s;
     transform: scale(1.05);
     img {
         border: 2px solid red;
+    }
+}
+
+#kobe:hover {
+    box-shadow: 0px 0px 50px rgb(146, 2, 146);
+    transition: 0.5s; 
+    transform: scale(1.05);
+    img {
+        border: 2px solid rgb(146, 2, 146);
+    }
+}
+
+#lebron:hover {
+    box-shadow: 0px 0px 50px yellow;
+    transition: 0.5s;
+    transform: scale(1.05);
+    img {
+        border: 2px solid yellow;
+    }
+}
+
+#curry:hover {
+    box-shadow: 0px 0px 50px rgb(0, 106, 255);
+    transition: 0.5s;
+    transform: scale(1.05);
+    img {
+        border: 2px solid rgb(0, 106, 255);
+    }
+}
+
+#wade:hover {
+    box-shadow: 0px 0px 50px #af1719;
+    transition: 0.5s;
+    transform: scale(1.05);
+    img {
+        border: 2px solid #af1719;
+    }
+}
+
+#luka:hover {
+    box-shadow: 0px 0px 50px #0732AA;
+    transition: 0.5s;
+    transform: scale(1.05);
+    img {
+        border: 2px solid #0732AA;
     }
 }
 
@@ -199,6 +245,21 @@ img {
     max-width: 600px;
     width: 100%;
     border: 2px solid var(--destaques);
+}
+
+#galeria {
+    padding: 20px;
+    text-align: center;
+}
+
+#galeria h2 {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 2.5em;
+    text-decoration: underline 2px;
+    text-shadow: 2px 2px 4px #70b5ff50;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 footer {
