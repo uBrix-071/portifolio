@@ -11,7 +11,7 @@
 
 :root {
     --textos:#F3EFF5;
-    --fundos:#003F87;
+    --fundos:#001A37;
     --sombras:#70B5FF;
     --destaques:#F8D525;
     --contraste:#AA7BC3;
@@ -35,7 +35,7 @@ header h1 {
     font-family: var(--font_titulos);
     font-size: 3em;
     text-shadow: 2px 2px 4px #70b5ff50;
-    letter-spacing: 3px;
+    letter-spacing: 3px
 }
 
 header p {
@@ -46,8 +46,9 @@ header p {
 }
 
 nav {
-    background-color: transparent;
+    background-color: var(--fundos);
     text-align: center;
+    border-top: 1.5px solid var(--contraste);
     padding-top: 10px;
 }
 
@@ -262,6 +263,47 @@ img {
     margin-bottom: 20px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #70b5ff50;
+  border: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    img {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    figcaption {
+        color: var(--destaques);
+        transition: 0.5s;
+    }
+}
+
+figcaption {
+    color: var(--textos);
+    font-family: var(--font_textos);
+    font-size: 1em;
+    text-shadow: 1px 1px 2px #70b5ff50;
+    margin-top: 10px;
+    text-align: center;
+}
+
 footer {
     padding: 30px;
     color: var(--textos);
@@ -277,39 +319,6 @@ footer a {
 
 footer a:hover {
     color: var(--contraste);
-    text-decoration: underline;
     transition: 0.5s;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.caption {
-  margin-top: 8px;
-  text-align: center;
-  font-size: 14px;
-  color: #ccc;
-}
-/*
