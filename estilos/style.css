@@ -14,11 +14,6 @@
     --fonte-texto: "Roboto", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +49,9 @@ nav {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: var(--cor-destaque);
 }
 
 nav a {
@@ -68,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-contraste-suave);
     transition: 0.5s;
 }
 
@@ -97,7 +95,6 @@ section {
 
 #sobre-mim {
     color: var(--cor-textos);
-    border-top: 3px var(--cor-destaque) solid;
     padding-bottom: 20px;
     text-align: center;
 }
