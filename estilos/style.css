@@ -49,8 +49,6 @@ nav {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
-    position: sticky;
-    top: 0;
     background-color: var(--cor-destaque);
 }
 
@@ -142,6 +140,18 @@ section {
     font-size: 1.2em;
     margin: 20px 0px;
     text-shadow: 0px 0px 7px #55b47541 ;
+}
+
+#projetos iframe {
+    background-color: white;
+    display: block;
+    margin: 30px auto;
+    border-radius: 20px;
+    max-width: 550px;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 0px 20px 4px #55b47541;
+    border: none;
 }
 
 #projetos img {

@@ -253,3 +253,14 @@ footer {
     font-size: 1.1em;
     font-weight: 600;
 }
+
+footer a {
+    text-decoration: none;
+    color: var(--cor-de-textos);
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: var(--cor-de-contraste);
+    transition: 0.3s;
+}
