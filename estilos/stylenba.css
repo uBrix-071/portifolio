@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
     --textos:#F3EFF5;
     --fundos:#001A37;

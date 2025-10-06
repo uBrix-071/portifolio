@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
     --cor_escura: #3E2723;
     --cor_media: #6D4C41;

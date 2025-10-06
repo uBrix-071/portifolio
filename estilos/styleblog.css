@@ -16,6 +16,10 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 img {
     max-width: 900px;
     width: 100%;

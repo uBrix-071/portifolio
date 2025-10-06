@@ -7,6 +7,10 @@
     padding: 0px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     background-image:linear-gradient(to bottom, rgb(65, 107, 93), rgb(85, 127, 113));
     text-align: center;
